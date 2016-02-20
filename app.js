@@ -36,7 +36,6 @@ app.get('/:date', (req, res) => {
   if (req.params.date) {
     var resp = parseDate(req.params.date);
     res.json(resp);
-    //res.json({"date": req.params.date});
   }
   else
     res.sendFile("index.html");
