@@ -14,6 +14,8 @@ function parseDate(date) {
     console.log("Natural: " + date.format());
     resp.natural = date.format("MMMM D, YYYY");
     resp.unix = date.format("X");
+    if (resp.natural === 'Invalid date')
+      resp = {unix: null, natural: null};
   } else {
     // date should be unix
     // TODO: Error handling
