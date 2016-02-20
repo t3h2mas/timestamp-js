@@ -6,8 +6,8 @@ Project for [Free Code Camp](http://FreeCodeCamp.com) Back End project.
 
 
 ## usage
-app.com/[DATE]
-where DATE is either an unix date or a natural one.
+app.com/`[DATE]`
+where `DATE` is either an **unix** date or a **natural** one.
 
 #### examples
 
