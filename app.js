@@ -3,6 +3,7 @@ var app = express();
 
 var moment = require('moment');
 
+app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/view'));
 
 function parseDate(date) {
@@ -14,7 +15,7 @@ function parseDate(date) {
     console.log("Natural: " + date.format());
     resp.natural = date.format("MMMM D, YYYY");
     resp.unix = date.format("X");
-    
+
     if (resp.natural === 'Invalid date')
       resp = {unix: null, natural: null};
   } else {
@@ -41,6 +42,6 @@ app.get('/:date', (req, res) => {
     res.sendFile("index.html");
 });
 
-app.listen(1337, function () {
+app.listen(app.get('port'), function () {
   console.log('Example app listening on port 1337!');
 });
