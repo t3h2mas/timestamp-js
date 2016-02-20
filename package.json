@@ -1,0 +1,16 @@
+{
+  "name": "timestamp-service",
+  "version": "1.0.0",
+  "description": "Timestamp Microservice for FreeCodeCamp back-end",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timestamp",
+    "express",
+    "fcc"
+  ],
+  "author": "Thomas Noe",
+  "license": "ISC"
+}
